@@ -6,6 +6,7 @@ import{
 } from 'react-router-dom'
 import Home from './components/Home'
 import SignUp from './components/SignUp'
+import UserHome from './components/UserHome'
 
 
 export default () => (
@@ -13,6 +14,7 @@ export default () => (
         <Switch>
             <Route path="/" exact component={Home}/>
             <Route path="/signup" component={SignUp}/>
+            <Route path="/user" component={UserHome}/>
         </Switch>
     </Router>
 );
